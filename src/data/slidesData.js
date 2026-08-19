@@ -13,28 +13,34 @@ export const slides = [
   {
     id: 1,
     slideNumber: "01",
+    layoutType: "hero",
     badge: "Bối Cảnh Lịch Sử",
     period: "1939 – 1940",
     title: "Bối Cảnh Lịch Sử Thế Giới & Trong Nước",
-    subtitle: "Sự chuyển biến mau lẹ của tình hình và nỗi đau 'Một cổ hai tròng'",
+    subtitle: "Sự chuyển biến mau lẹ của tình hình chính trị và nỗi đau 'Một cổ hai tròng'",
     themeColor: "red",
+    heroMetrics: [
+      { label: "09/1939", value: "CTTG II Bùng Nổ", desc: "Đức tấn công Ba Lan, Pháp tham chiến" },
+      { label: "06/1940", value: "Pháp Đầu Hàng Đức", desc: "Chính quyền thuộc địa siết chặt bóc lột" },
+      { label: "09/1940", value: "Nhật Vào Đông Dương", desc: "Nhân dân chịu cảnh 'Một cổ hai tròng'" }
+    ],
     content: {
       leftPillar: {
-        title: "Thế Giới: Chiến Tranh Bùng Nổ",
+        title: "Tình Hình Thế Giới: CTTG II",
         icon: "Globe",
         points: [
-          "Tháng 9/1939: Chiến tranh thế giới thứ hai chính thức bùng nổ.",
-          "Tháng 6/1940: Phát xít Đức tấn công và buộc Chính phủ Pháp đầu hàng.",
-          "Chính quyền phản động thuộc địa Pháp tăng cường bóc lột và đàn áp phong trào cách mạng ở Đông Dương."
+          "Tháng 9/1939: Chiến tranh thế giới thứ hai bùng nổ tác động sâu sắc toàn cầu.",
+          "Tháng 6/1940: Phát xít Đức chiếm Paris, Chính phủ Pháp quỳ gối đầu hàng.",
+          "Thực dân Pháp ở Đông Dương thi hành chính thức chính sách kinh tế chỉ huy, vơ vét sức người sức của phục vụ chiến tranh."
         ]
       },
       rightPillar: {
-        title: "Trong Nước: Nhân Dân 'Một Cổ Hai Tròng'",
+        title: "Tình Hình Trong Nước: 'Một Cổ Hai Tròng'",
         icon: "ShieldAlert",
         points: [
-          "Tháng 9/1940: Phát xít Nhật tràn vào Đông Dương, Pháp quỳ gối dâng quyền lợi.",
-          "Nhân dân Việt Nam chịu cảnh 'Một cổ hai tròng' bức hại tận cùng (Pháp - Nhật).",
-          "Mâu thuẫn giữa toàn thể dân tộc Việt Nam với đế quốc phát xít Pháp - Nhật trở nên gay gắt hơn bao giờ hết."
+          "Tháng 9/1940: Phát xít Nhật tràn vào Đông Dương, Pháp dâng quyền lợi và câu kết với Nhật.",
+          "Nhân dân Việt Nam lâm vào thảm cảnh bị cả Pháp và Nhật bóc lột, vơ vét tận cùng.",
+          "Mâu thuẫn giữa toàn thể dân tộc Việt Nam với thực dân Pháp và phát xít Nhật trở thành mâu thuẫn chủ yếu duy nhất."
         ]
       }
     },
@@ -46,33 +52,38 @@ export const slides = [
   {
     id: 2,
     slideNumber: "02",
+    layoutType: "timeline-stepper",
     badge: "Bước Đầu Chuyển Hướng",
     period: "11/1939 – 11/1940",
     title: "Bước Đầu Chuyển Hướng Chỉ Đạo Chiến Lược",
-    subtitle: "Hội nghị Trung ương 6 và Hội nghị Cán bộ Trung ương",
+    subtitle: "Mở đầu sự chuyển hướng chiến lược qua hai Hội nghị Trung ương quan trọng",
     themeColor: "amber",
-    content: {
-      leftPillar: {
-        title: "Hội Nghị Trung Ương 6 (11/1939)",
-        icon: "Scroll",
+    steps: [
+      {
+        stepNumber: "01",
+        time: "11/1939",
+        title: "Hội Nghị Trung Ương 6",
+        location: "Bà Điểm (Hóc Môn)",
+        chair: "Tổng Bí thư Nguyễn Văn Cừ",
         points: [
-          "Do Tổng Bí thư Nguyễn Văn Cừ chủ trì tại Bà Điểm (Hóc Môn).",
-          "Khẳng định: Giải phóng dân tộc là nhiệm vụ hàng đầu, cấp bách nhất.",
-          "Tạm gác khẩu hiệu 'Cách mạng ruộng đất', thay bằng chống tịch thu ruộng đất của đế quốc.",
+          "Đặt nhiệm vụ Giải phóng Dân tộc lên hàng đầu và cấp bách nhất.",
+          "Tạm gác khẩu hiệu 'Cách mạng ruộng đất', chống tịch thu ruộng đất.",
           "Thành lập 'Mặt trận Thống nhất Dân tộc Phản đế Đông Dương'."
         ]
       },
-      rightPillar: {
-        title: "Hội Nghị Cán Bộ Trung Ương (11/1940)",
-        icon: "Users",
+      {
+        stepNumber: "02",
+        time: "11/1940",
+        title: "Hội Nghị Cán Bộ Trung Ương",
+        location: "Đình Bảng (Bắc Ninh)",
+        chair: "Ban Chấp hành Trung ương",
         points: [
-          "Họp tại Đình Bảng (Bắc Ninh) sau khi Khởi nghĩa Bắc Sơn bùng nổ.",
           "Tái lập Ban Chấp hành Trung ương Đảng chính thức.",
-          "Duy trì lực lượng vũ trang Bắc Sơn làm nòng cốt xây dựng căn cứ địa.",
-          "Tiếp tục duy trì đường lối đặt giải phóng dân tộc lên trên hết."
+          "Duy trì lực lượng vũ trang Bắc Sơn làm nòng cốt căn cứ địa.",
+          "Khẳng định tiếp tục đường lối đặt giải phóng dân tộc lên trên hết."
         ]
       }
-    },
+    ],
     historicalQuote: {
       quote: "Bước đường sinh tồn của các dân tộc Đông Dương không có đường nào khác hơn là đường lộ giải phóng dân tộc.",
       speaker: "Nghị quyết Hội nghị Trung ương 6 (11/1939)"
@@ -81,31 +92,35 @@ export const slides = [
   {
     id: 3,
     slideNumber: "03",
+    layoutType: "split-feature",
     badge: "Bước Nhảy Vọt Chiến Lược",
     period: "05/1941",
-    title: "Hội Nghị Trung Ương 8 (5/1941) - Hoàn Chỉnh Chiến Lược (Phần 1)",
-    subtitle: "Nguyễn Ái Quốc trở về nước & Thành lập Mặt trận Việt Minh",
+    title: "Hội Nghị Trung Ương 8 (5/1941) - Hoàn Chỉnh Chiến Lược",
+    subtitle: "Nguyễn Ái Quốc trở về nước chủ trì & Quyết định lịch sử thành lập Việt Minh",
     themeColor: "red",
-    content: {
-      leftPillar: {
-        title: "Bối Cảnh & Chủ Trì",
-        icon: "Flag",
-        points: [
-          "Ngày 28/1/1941: Lãnh tụ Nguyễn Ái Quốc trở về Pắc Bó (Cao Bằng) sau 30 năm bôn ba.",
-          "Tháng 5/1941: Lãnh tụ Nguyễn Ái Quốc chủ trì Hội nghị Trung ương 8 tại Pắc Bó.",
-          "Hội nghị quy tụ dàn lãnh đạo nòng cốt: Trường Chinh, Hoàng Văn Thụ, Phùng Chí Kiên..."
-        ]
-      },
-      rightPillar: {
-        title: "Nội Dung Chiến Lược Cốt Lõi",
-        icon: "Award",
-        points: [
-          "Đặt nhiệm vụ Giải phóng Dân tộc lên hàng tối cao, quyết định vận mệnh sống còn.",
-          "Quyết định thành lập 'Việt Nam Độc lập Đồng minh' (Mặt trận Việt Minh) ngày 19/5/1941.",
-          "Tập hợp rộng rãi mọi tầng lớp nhân dân không phân biệt giai cấp, tôn giáo, dân tộc."
-        ]
-      }
+    featureCard: {
+      tag: "SỰ KIỆN LỊCH SỬ THIÊNG LIÊNG",
+      date: "28/01/1941",
+      title: "Lãnh tụ Nguyễn Ái Quốc về nước",
+      desc: "Sau 30 năm bôn ba tìm đường cứu nước, Người trở về Pắc Bó (Cao Bằng) trực tiếp chỉ đạo cách mạng Việt Nam và chủ trì Hội nghị Trung ương 8 (5/1941)."
     },
+    decisions: [
+      {
+        icon: "Flag",
+        title: "Đặt Giải Phóng Dân Tộc Lên Hàng Tối Cao",
+        desc: "Quyền lợi của bộ phận, giai cấp phải phục tùng sinh mệnh của toàn thể quốc gia dân tộc."
+      },
+      {
+        icon: "Award",
+        title: "Thành Lập Mặt Trận Việt Minh (19/5/1941)",
+        desc: "Việt Nam Độc lập Đồng minh đại đoàn kết mọi tầng lớp nhân dân yêu nước."
+      },
+      {
+        icon: "Users",
+        title: "Tập Hợp Khối Đại Đoàn Kết Toàn Dân",
+        desc: "Đoàn kết công, nông, trí thức, tiểu tư sản, thương gia, điền chủ yêu nước."
+      }
+    ],
     historicalQuote: {
       quote: "Trong lúc này nếu không giải quyết được vấn đề dân tộc giải phóng... thì chẳng những toàn thể quốc gia dân tộc còn chịu mãi kiếp ngựa trâu, mà quyền lợi của bộ phận, giai cấp đến nghìn năm cũng không đòi lại được.",
       speaker: "Nghị quyết Hội nghị Trung ương 8 (5/1941)"
@@ -114,64 +129,70 @@ export const slides = [
   {
     id: 4,
     slideNumber: "04",
+    layoutType: "comparison",
     badge: "Hoàn Chỉnh Chiến Lược",
     period: "05/1941",
-    title: "Hội Nghị Trung Ương 8 (5/1941) - Hoàn Chỉnh Chiến Lược (Phần 2)",
-    subtitle: "Chính thể Việt Nam Dân chủ Cộng hòa & Ý nghĩa lịch sử",
+    title: "Hội Nghị Trung Ương 8: Hoàn Chỉnh Đường Lối Chiến Lược",
+    subtitle: "Sự phát triển lý luận sáng tạo và khắc phục triệt để hạn chế trước đây",
     themeColor: "amber",
-    content: {
-      leftPillar: {
-        title: "Quyết Định Về Chính Thể & Phương Pháp",
-        icon: "Landmark",
+    comparison: {
+      leftBox: {
+        tag: "BẤT CẬP TRƯỚC ĐÂY",
+        title: "Luận Cương Tháng 10/1930",
         points: [
-          "Thay thế chính thể 'Xô viết công nông' bằng chính thể 'Việt Nam Dân chủ Cộng hòa'.",
-          "Xác định hình thái khởi nghĩa: Xây dựng căn cứ địa, khởi nghĩa từng phần tiến lên Tổng khởi nghĩa.",
-          "Thông qua Cờ đỏ Sao vàng làm lá cờ đại diện cho khối đại đoàn kết toàn dân tộc."
+          "Nặng về đấu tranh giai cấp và cách mạng ruộng đất.",
+          "Chưa đặt nhiệm vụ giải phóng dân tộc lên hàng đầu.",
+          "Chính thể dự kiến: 'Xô viết công nông' mang tính giai cấp hẹp."
         ]
       },
-      rightPillar: {
-        title: "Ý Nghĩa Lịch Sử Vĩ Đại",
-        icon: "Star",
+      rightBox: {
+        tag: "BƯỚC PHÁT TRUYỂN SÁNG TẠO",
+        title: "Nghị Quyết Trung Ương 8 (5/1941)",
         points: [
-          "Hoàn chỉnh triệt để đường lối chuyển hướng chỉ đạo chiến lược của Đảng.",
-          "Khắc phục hoàn toàn những hạn chế về nhiệm vụ dân tộc trong Luận cương tháng 10/1930.",
-          "Trở thành ngọn cờ ngời sáng dẫn đường cho toàn thể nhân dân Việt Nam tiến tới Cách mạng Tháng Tám."
+          "Đặt giải phóng dân tộc lên hàng ưu tiên số 1 tuyệt đối.",
+          "Tạm gác khẩu hiệu ruộng đất, tập trung chống đế quốc.",
+          "Chính thể mới: Nước 'Việt Nam Dân chủ Cộng hòa' của toàn dân.",
+          "Quyết định dùng lá Cờ đỏ Sao vàng làm đại diện dân tộc."
         ]
       }
     },
     historicalQuote: {
-      quote: "Hội nghị Trung ương 8 đã khắc phục triệt để hạn chế của Luận cương 10/1930, đưa nhiệm vụ giải phóng dân tộc lên hàng đầu.",
+      quote: "Hội nghị Trung ương 8 đã khắc phục triệt để hạn chế của Luận cương 10/1930, trở thành ngọn cờ ngời sáng dẫn đường toàn dân.",
       speaker: "Giáo trình Lịch sử Đảng Cộng sản Việt Nam"
     }
   },
   {
     id: 5,
     slideNumber: "05",
+    layoutType: "cards-3col",
     badge: "Tiếng Súng Khởi Đầu",
     period: "1940 – 1941",
     title: "Các Cuộc Nổi Dậy Đầu Tiên Tiền Khởi Nghĩa",
-    subtitle: "Khởi nghĩa Bắc Sơn, Nam Kỳ và Binh biến Đô Lương",
+    subtitle: "Những tiếng súng báo hiệu cho cuộc khởi nghĩa toàn quốc",
     themeColor: "red",
-    content: {
-      leftPillar: {
-        title: "Ba Cuộc Nổi Dậy Lịch Sử",
+    cards: [
+      {
         icon: "Flame",
-        points: [
-          "Khởi nghĩa Bắc Sơn (27/9/1940): Đột kích đồn bốt Pháp tại Lạng Sơn, thành lập Đội du kích Bắc Sơn.",
-          "Khởi nghĩa Nam Kỳ (23/11/1940): Bùng nổ rộng khắp miền Nam, lần đầu tiên lá Cờ đỏ Sao vàng xuất hiện.",
-          "Binh biến Đô Lương (13/1/1941): Do Đội Cung chỉ huy binh lính người Việt nổi dậy tại Nghệ An."
-        ]
+        time: "27/09/1940",
+        title: "Khởi Nghĩa Bắc Sơn",
+        location: "Lạng Sơn",
+        desc: "Đột kích đồn bốt Pháp tại Lạng Sơn, thành lập Đội du kích Bắc Sơn - mầm mống lực lượng vũ trang."
       },
-      rightPillar: {
-        title: "Bài Học & Tầm Ảnh Hưởng",
+      {
         icon: "Zap",
-        points: [
-          "Tuy thất bại do thời cơ chưa chín mùi, nhưng là 'những tiếng súng báo hiệu cho cuộc khởi nghĩa toàn quốc'.",
-          "Để lại bài học vô giá về xây dựng lực lượng vũ trang, thời cơ khởi nghĩa và phương pháp đấu tranh.",
-          "Rèn luyện ý chí chiến đấu sắt đá cho quần chúng nhân dân."
-        ]
+        time: "23/11/1940",
+        title: "Khởi Nghĩa Nam Kỳ",
+        location: "Toàn Miền Nam",
+        desc: "Nổi dậy rộng khắp Nam Bộ, lần đầu tiên xuất hiện lá Cờ đỏ Sao vàng ngời sáng."
+      },
+      {
+        icon: "Swords",
+        time: "13/01/1941",
+        title: "Binh Biến Đô Lương",
+        location: "Nghệ An",
+        desc: "Đội Cung chỉ huy binh lính người Việt nổi dậy chiếm đồn Chợ Rạch, thể hiện tinh thần quật khởi."
       }
-    },
+    ],
     historicalQuote: {
       quote: "Đó là những tiếng súng báo hiệu cho cuộc khởi nghĩa toàn quốc, là bước đầu đấu tranh vũ trang của nhân dân Đông Dương.",
       speaker: "Văn kiện Đảng về các cuộc khởi nghĩa 1940-1941"
@@ -180,32 +201,34 @@ export const slides = [
   {
     id: 6,
     slideNumber: "06",
+    layoutType: "tribute-grid",
     badge: "Sự Hy Sinh Anh Dũng",
     period: "1941",
-    title: "Sự Hy Sinh Của Các Lãnh Đạo Nòng Cốt",
-    subtitle: "Tổn thất to lớn và tinh thần bất khuất vì độc lập tự do",
+    title: "Sự Hy Sinh Anh Dũng Của Các Lãnh Đạo Nòng Cốt",
+    subtitle: "Tổn thất vô cùng nặng nề nhưng ngọn lửa cách mạng vẫn rực sáng",
     themeColor: "amber",
-    content: {
-      leftPillar: {
-        title: "Những Người Con Ưu Tú Tày Trời",
-        icon: "Shield",
-        points: [
-          "Tổng Bí thư Nguyễn Văn Cừ: Nhà chiến lược kiệt xuất bị Pháp bắn tại Hóc Môn (8/1941).",
-          "Chủ tịch Phan Đăng Lưu: Người chỉ đạo Khởi nghĩa Nam Kỳ bị Pháp xử bắn.",
-          "Cựu Tổng Bí thư Hà Huy Tập & Lê Hồng Phong: Hy sinh anh dũng trong ngục tù đế quốc.",
-          "Nữ anh hùng Nguyễn Thị Minh Khai: Ngẩng cao đầu trước họng súng kẻ thù."
-        ]
+    tributes: [
+      {
+        name: "Nguyễn Văn Cừ",
+        role: "Tổng Bí thư (1938-1939)",
+        desc: "Nhà chiến lược kiệt xuất khởi xướng chuyển hướng chiến lược, bị Pháp bắn tại Hóc Môn (8/1941)."
       },
-      rightPillar: {
-        title: "Ngọn Lửa Cách Mạng Bất Diệt",
-        icon: "HeartPulse",
-        points: [
-          "Mặc dù Ban Chấp hành Trung ương bị tổn thất vô cùng nặng nề, ngọn lửa chiến đấu không hề bị dập tắt.",
-          "Thế hệ cán bộ trẻ và Việt Minh tiếp nối ngọn cờ, biến đau thương thành hành động cách mạng.",
-          "Khẳng định bản lĩnh kiên cường, thà hy sinh chứ quyết không làm nô lệ."
-        ]
+      {
+        name: "Phan Đăng Lưu",
+        role: "Ủy viên TW Đảng",
+        desc: "Trí thức cách mạng lớn, người chỉ đạo Khởi nghĩa Nam Kỳ, anh dũng hy sinh trước họng súng kẻ thù."
+      },
+      {
+        name: "Hà Huy Tập",
+        role: "Cựu Tổng Bí thư",
+        desc: "Nhà lý luận xuất sắc, hy sinh anh dũng tại Hóc Môn năm 1941 với lời dặn: 'Hãy giữ vững chí khí chiến đấu!'."
+      },
+      {
+        name: "Nguyễn Thị Minh Khai",
+        role: "Bí thư Thành ủy Sài Gòn",
+        desc: "Nữ anh hùng kiên trung ngẩng cao đầu trước pháp trường, để lại tấm gương bất khuất."
       }
-    },
+    ],
     historicalQuote: {
       quote: "Hãy giữ vững chí khí chiến đấu!",
       speaker: "Lời dặn cuối cùng của đồng chí Nguyễn Văn Cừ & Hà Huy Tập"
@@ -214,31 +237,34 @@ export const slides = [
   {
     id: 7,
     slideNumber: "07",
+    layoutType: "document-banner",
     badge: "Xây Dựng Lực Lượng",
     period: "1941 – 1943",
-    title: "Xây Dựng Lực Lượng Chính Trị & Đề Cương Văn Hóa",
-    subtitle: "Phát triển Mặt trận Việt Minh và soi đường tư tưởng văn hóa",
+    title: "Xây Dựng Lực Lượng Chính Trị & Đề Cương Văn Hóa (1943)",
+    subtitle: "Phát triển Mặt trận Việt Minh và vũ khí tư tưởng văn hóa cách mạng",
     themeColor: "red",
-    content: {
-      leftPillar: {
-        title: "Phát Triển Lực Lượng Chính Trị",
-        icon: "Users",
-        points: [
-          "Thành lập các hội 'Cứu quốc': Nông dân cứu quốc, Thanh niên cứu quốc, Phụ nữ cứu quốc, Công nhân cứu quốc...",
-          "Xây dựng Cao Bằng thành trung tâm căn cứ địa cách mạng miền núi.",
-          "Phát triển phong trào Việt Minh sâu rộng xuống các tỉnh đồng bằng và đô thị lớn (Hà Nội, Hải Phòng...)."
-        ]
-      },
-      rightPillar: {
-        title: "Đề Cương Về Văn Hóa Việt Nam (1943)",
-        icon: "BookOpen",
-        points: [
-          "Do Tổng Bí thư Trường Chinh khởi thảo năm 1943.",
-          "Nêu rõ 3 nguyên tắc vận động văn hóa cách mạng: Dân tộc hóa, Đại chúng hóa, Khoa học hóa.",
-          "Tập hợp đông đảo tầng lớp trí thức, văn nghệ sĩ, học sinh, sinh viên gia nhập Mặt trận Việt Minh."
-        ]
-      }
+    documentHeader: {
+      title: "ĐỀ CƯƠNG VỀ VĂN HÓA VIỆT NAM (1943)",
+      author: "Do Tổng Bí thư Trường Chinh khởi thảo",
+      sub: "Văn kiện soi đường tập hợp đông đảo văn nghệ sĩ, trí thức gia nhập Việt Minh"
     },
+    principles: [
+      {
+        num: "01",
+        title: "DÂN TỘC HÓA",
+        desc: "Chống lại mọi ảnh hưởng nô dịch, thuộc địa của văn hóa thực dân, thức tỉnh lòng tự tôn dân tộc."
+      },
+      {
+        num: "02",
+        title: "ĐẠI CHÚNG HÓA",
+        desc: "Văn hóa phải phục vụ đông đảo quần chúng nhân dân lao động, do quần chúng sáng tạo."
+      },
+      {
+        num: "03",
+        title: "KHOA HỌC HÓA",
+        desc: "Chống lại phong tục tập quán lạc hậu, mê tín dị đoan, xây dựng tư tưởng tiến bộ."
+      }
+    ],
     historicalQuote: {
       quote: "Văn hóa là một mặt trận. Ba nguyên tắc Dân tộc hóa, Đại chúng hóa, Khoa học hóa là kim nam đem lại sức sống cho văn hóa Việt Nam.",
       speaker: "Đề cương về Văn hóa Việt Nam (1943)"
@@ -247,31 +273,32 @@ export const slides = [
   {
     id: 8,
     slideNumber: "08",
+    layoutType: "stat-callout",
     badge: "Lực Lượng Vũ Trang",
     period: "22/12/1944",
     title: "Thành Lập Đội VN Tuyên Truyền Giải Phóng Quân",
-    subtitle: "Dự báo thiên tài của Chủ tịch Hồ Chí Minh",
+    subtitle: "Sự ra đời của quân đội nòng cốt & Dự báo thiên tài của Chủ tịch Hồ Chí Minh",
     themeColor: "amber",
-    content: {
-      leftPillar: {
-        title: "Sự Ra Đời Của Đội Quân Nòng Cốt",
-        icon: "Swords",
-        points: [
-          "Ngày 22/12/1944: Thành lập Đội VN Tuyên truyền Giải phóng quân tại khu rừng Trần Hưng Đạo (Cao Bằng).",
-          "Gồm 34 chiến sĩ ưu tú do đồng chí Võ Nguyên Giáp trực tiếp chỉ huy.",
-          "Ngay sau khi thành lập đã đánh thắng 2 trận liên tiếp: Phai Khắt (25/12) và Nà Ngần (26/12)."
-        ]
+    statBoxes: [
+      {
+        bigNum: "34",
+        unit: "Chiến sĩ",
+        label: "Đội quân ban đầu",
+        desc: "Thành lập 22/12/1944 tại Cao Bằng do đồng chí Võ Nguyên Giáp chỉ huy."
       },
-      rightPillar: {
-        title: "Dự Báo Thiên Tài Của Bác Hồ",
-        icon: "Compass",
-        points: [
-          "Cuối năm 1944, Bác Hồ nhận định: 'Tình hình thế giới biến chuyển rất nhanh, cơ hội giải phóng dân tộc xuất hiện trong khoảng 1 đến 1,5 năm nữa'.",
-          "Chỉ đạo chuyển từ hình thức đấu tranh chính trị sang kết hợp đấu tranh chính trị với đấu tranh vũ trang.",
-          "Chuẩn bị mọi điều kiện sẵn sàng đón thời cơ nhảy vọt."
-        ]
+      {
+        bigNum: "02",
+        unit: "Trận đầu thắng",
+        label: "Phai Khắt & Nà Ngần",
+        desc: "Mở màn truyền thống đánh là thắng của QĐND Việt Nam anh hùng."
+      },
+      {
+        bigNum: "1-1.5",
+        unit: "Năm nữa",
+        label: "Dự báo của Bác Hồ",
+        desc: "Bác nhận định cuối 1944: 'Thời cơ giải phóng xuất hiện trong 1 đến 1,5 năm nữa'."
       }
-    },
+    ],
     historicalQuote: {
       quote: "Đội Việt Nam Tuyên truyền Giải phóng quân là đội quân đàn anh, mong cho nó có kíp khác đàn em khác. Tuy lúc đầu quy mô của nó còn nhỏ, nhưng triển vọng của nó rất nở lớn.",
       speaker: "Chỉ thị thành lập của Hồ Chí Minh (12/1944)"
@@ -280,31 +307,35 @@ export const slides = [
   {
     id: 9,
     slideNumber: "09",
+    layoutType: "split-feature",
     badge: "Cao Trào Kháng Nhật",
     period: "03/1945",
-    title: "Cao Trào Kháng Nhật Cứu Nước - Bối Cảnh Nhật Đảo Chính",
-    subtitle: "Nhật đảo chính Pháp ngày 9/3/1945 & Sự biến động cục diện",
+    title: "Cao Trào Kháng Nhật Cứu Nước: Nhật Đảo Chính Pháp",
+    subtitle: "Sự kiện đêm 9/3/1945 và sự đảo lộn toàn bộ cục diện Đông Dương",
     themeColor: "red",
-    content: {
-      leftPillar: {
-        title: "Sự Kiện Đảo Chính 9/3/1945",
-        icon: "Flame",
-        points: [
-          "Đầu năm 1945: Phát xít Đức thất bại thảm hại ở châu Âu, quân Đồng minh áp sát Nhật Bản.",
-          "Đêm 9/3/1945: Nhật nổ súng đảo chính Pháp trên toàn cõi Đông Dương để trừ nguy cơ bị Pháp đánh sau lưng.",
-          "Thực dân Pháp nhanh chóng đầu hàng, tháo chạy hoặc bị Nhật bắt làm tù binh."
-        ]
-      },
-      rightPillar: {
-        title: "Tình Thế Mới Xuất Hiện",
-        icon: "AlertTriangle",
-        points: [
-          "Hệ thống cai trị của thực dân Pháp sụp đổ hoàn toàn sau gần 100 năm.",
-          "Phát xít Nhật lập nên chính phủ tay sai Trần Trọng Kim để thao túng.",
-          "Cuộc khủng hoảng chính trị sâu sắc bùng nổ, tạo tiền đề cho cuộc bùng nổ khởi nghĩa."
-        ]
-      }
+    featureCard: {
+      tag: "SỰ KIỆN ĐỘT BIẾN CỤC DIỆN",
+      date: "Đêm 09/03/1945",
+      title: "Nhật nổ súng đảo chính Pháp",
+      desc: "Lo sợ Đồng minh đổ bộ và Pháp đánh sau lưng, phát xít Nhật độc chiếm Đông Dương. Thực dân Pháp sụp đổ hoàn toàn sau gần 100 năm cai trị."
     },
+    decisions: [
+      {
+        icon: "Flame",
+        title: "Kẻ Thù Cũ Sụp Đổ Cực Nhanh",
+        desc: "Thực dân Pháp nhanh chóng hàng Nhật, tháo chạy hoặc bị bắt làm tù binh."
+      },
+      {
+        icon: "AlertTriangle",
+        title: "Phát Xít Nhật Lập Chính Phủ Tay Sai",
+        desc: "Lập chính phủ Trần Trọng Kim làm bù nhìn để thao túng Đông Dương."
+      },
+      {
+        icon: "Zap",
+        title: "Khủng Hoảng Chính Trị Sâu Sắc",
+        desc: "Tạo ra tình thế cách mạng chín mùi cho cuộc bùng nổ khởi nghĩa."
+      }
+    ],
     historicalQuote: {
       quote: "Đảo chính Nhật - Pháp đã tạo ra một cuộc khủng hoảng chính trị sâu sắc, làm cho điều kiện khởi nghĩa mau chín mùi.",
       speaker: "Đảng Cộng sản Việt Nam (3/1945)"
@@ -313,31 +344,34 @@ export const slides = [
   {
     id: 10,
     slideNumber: "10",
+    layoutType: "document-banner",
     badge: "Chỉ Thị Lịch Sử",
     period: "12/03/1945",
     title: "Chỉ Thị 'Nhật, Pháp Bắn Nhau Và Hành Động Của Chúng Ta'",
-    subtitle: "Văn kiện chiến lược hướng dẫn Cao trào Kháng Nhật cứu nước",
+    subtitle: "Văn kiện chiến lược hướng dẫn Cao trào Kháng Nhật cứu nước làm tiền đề Tổng khởi nghĩa",
     themeColor: "amber",
-    content: {
-      leftPillar: {
-        title: "Chủ Trương Lịch Sử Của Đảng",
-        icon: "FileText",
-        points: [
-          "Ngày 12/3/1945: Ban Thường vụ Trung ương Đảng ra Chỉ thị lịch sử tại Từ Sơn (Bắc Ninh).",
-          "Xác định kẻ thù cụ thể duy nhất: Phát xít Nhật (thay cho kẻ thù Pháp - Nhật trước đây).",
-          "Thay khẩu hiệu 'Đánh đuổi Nhật - Pháp' bằng 'Đánh đuổi phát xít Nhật'."
-        ]
-      },
-      rightPillar: {
-        title: "Phát Động Cao Trào Kháng Nhật",
-        icon: "Target",
-        points: [
-          "Xác định khủng hoảng chính trị chín mùi nhưng thời cơ Tổng khởi nghĩa chưa đến.",
-          "Phát động một 'Cao trào kháng Nhật cứu nước' mạnh mẽ làm tiền đề cho Tổng khởi nghĩa.",
-          "Sẵn sàng chuyển sang hình thức Tổng khởi nghĩa khi thời cơ chín mùi."
-        ]
-      }
+    documentHeader: {
+      title: "CHỈ THỊ BAN THƯỜNG VỤ TRUNG ƯƠNG ĐẢNG",
+      author: "Ban hành ngày 12/03/1945 tại Từ Sơn (Bắc Ninh)",
+      sub: "Định hướng chiến lược tối quan trọng ngay sau khi Nhật đảo chính Pháp"
     },
+    principles: [
+      {
+        num: "01",
+        title: "XÁC ĐỊNH KẺ THÙ CỤ THỂ",
+        desc: "Thay kẻ thù 'Pháp - Nhật' bằng kẻ thù duy nhất và trực tiếp: Phát xít Nhật."
+      },
+      {
+        num: "02",
+        title: "THAY ĐỔI KHẨU HIỆU",
+        desc: "Thay khẩu hiệu 'Đánh đuổi Nhật - Pháp' bằng khẩu hiệu 'Đánh đuổi phát xít Nhật'."
+      },
+      {
+        num: "03",
+        title: "PHÁT ĐỘNG CAO TRÀO",
+        desc: "Khởi nghĩa từng phần, đẩy mạnh chiến tranh du kích, sẵn sàng tiến lên Tổng khởi nghĩa."
+      }
+    ],
     historicalQuote: {
       quote: "Bất kỳ ở đâu khi thấy điều kiện thuận lợi là phải chủ động tiến hành khởi nghĩa từng phần, mở rộng căn cứ địa.",
       speaker: "Chỉ thị 'Nhật, Pháp bắn nhau và hành động của chúng ta' (12/3/1945)"
@@ -346,31 +380,44 @@ export const slides = [
   {
     id: 11,
     slideNumber: "11",
+    layoutType: "timeline-stepper",
     badge: "Diễn Biến Cao Trào",
     period: "03 – 07/1945",
     title: "Diễn Biến Cao Trào Kháng Nhật Cứu Nước",
-    subtitle: "Khởi nghĩa từng phần & Khẩu hiệu 'Phá kho thóc giải quyết nạn đói'",
+    subtitle: "Khởi nghĩa từng phần & Khẩu hiệu thần kỳ 'Phá kho thóc giải quyết nạn đói'",
     themeColor: "red",
-    content: {
-      leftPillar: {
-        title: "Khẩu Hiệu 'Phá Kho Thóc' & Đấu Tranh",
-        icon: "Wheat",
+    steps: [
+      {
+        stepNumber: "01",
+        time: "03 - 05/1945",
+        title: "Khởi Nghĩa Từng Phần",
+        location: "Rộng khắp cả nước",
         points: [
-          "Đẩy mạnh khẩu hiệu 'Phá kho thóc, giải quyết nạn đói' đáp ứng đúng nguyện vọng sinh tử của hàng triệu quần chúng.",
-          "Hàng vạn kho thóc của Nhật bị chiếm, cứu sống triệu người dân khỏi thảm cảnh đói giặc năm 1945.",
-          "Hàng triệu quần chúng tin tưởng và đứng vào hàng ngũ Mặt trận Việt Minh."
+          "Chiến tranh du kích cục bộ bùng nổ mạnh mẽ.",
+          "Thành lập chính quyền nhân dân ở nhiều vùng giải phóng."
         ]
       },
-      rightPillar: {
-        title: "Khu Giải Phóng Việt Bắc",
-        icon: "MapPin",
+      {
+        stepNumber: "02",
+        time: "04 - 06/1945",
+        title: "Phá Kho Thóc Cứu Đói",
+        location: "Bắc Bộ & Bắc Trung Bộ",
         points: [
-          "Tháng 4/1945: Hội nghị Quân sự Bắc Kỳ quyết định thống nhất các lực lượng vũ trang thành 'Việt Nam Giải phóng quân'.",
-          "Tháng 6/1945: Thành lập Khu giải phóng Việt Bắc gồm 6 tỉnh (Cao - Bắc - Lạng - Thái - Tuyên - Hà).",
-          "Việt Bắc trở thành căn cứ địa chính của cả nước, hình ảnh thu nhỏ của nước Việt Nam mới."
+          "Đẩy mạnh khẩu hiệu 'Phá kho thóc, giải quyết nạn đói'.",
+          "Cứu sống triệu dân nghèo, quy tụ hàng triệu quần chúng vào Việt Minh."
+        ]
+      },
+      {
+        stepNumber: "03",
+        time: "06/1945",
+        title: "Khu Giải Phóng Việt Bắc",
+        location: "6 Tỉnh Miền Bắc",
+        points: [
+          "Thành lập Khu giải phóng Việt Bắc (Cao - Bắc - Lạng - Thái - Tuyên - Hà).",
+          "Trở thành căn cứ địa chính của cả nước, hình ảnh thu nhỏ của nước VN mới."
         ]
       }
-    },
+    ],
     historicalQuote: {
       quote: "Khẩu hiệu 'Phá kho thóc giải quyết nạn đói' đã thổi bùng ngọn lửa cách mạng trong lòng hàng triệu nông dân nghèo khổ.",
       speaker: "Lịch sử Cách mạng Tháng Tám"
@@ -379,31 +426,32 @@ export const slides = [
   {
     id: 12,
     slideNumber: "12",
+    layoutType: "stat-callout",
     badge: "Thời Cơ Vàng",
     period: "08/1945",
     title: "Bối Cảnh & 'Thời Cơ Vàng' Tháng 8 Năm 1945",
-    subtitle: "Phát xít Nhật đầu hàng Đồng minh & Khoảnh khắc lịch sử có một không hai",
+    subtitle: "Nhật đầu hàng Đồng minh & Khoảnh khắc lịch sử có một không hai",
     themeColor: "amber",
-    content: {
-      leftPillar: {
-        title: "Nhật Đầu Hàng Đồng Minh",
-        icon: "CheckCircle",
-        points: [
-          "Ngày 15/8/1945: Nhật Hoàng tuyên bố đầu hàng Đồng minh không điều kiện.",
-          "Quân Nhật ở Đông Dương hoang mang cực độ, mất hết sức chiến đấu và tinh thần.",
-          "Chính quyền tay sai Trần Trọng Kim tê liệt, rệu rã hoàn toàn."
-        ]
+    statBoxes: [
+      {
+        bigNum: "15/8",
+        unit: "1945",
+        label: "Nhật Đầu Hàng",
+        desc: "Nhật Hoàng tuyên bố đầu hàng Đồng minh không điều kiện."
       },
-      rightPillar: {
-        title: "Đặc Điểm Của 'Thời Cơ Vàng'",
-        icon: "Clock",
-        points: [
-          "Xuất hiện trong khoảng thời gian cực ngắn (khoảng 20 ngày): Từ khi Nhật đầu hàng đến trước khi quân Đồng minh (Anh, Tưởng) vào Đông Dương.",
-          "Kẻ thù cũ (Pháp) đã đổ, kẻ thù mới (Nhật) đã hàng, kẻ thù tương lai (Đồng minh) chưa kịp tới.",
-          "Thực lực cách mạng trong nước đã chuẩn bị sẵn sàng, quần chúng sục sôi khí thế."
-        ]
+      {
+        bigNum: "20",
+        unit: "Ngày Vàng",
+        label: "Khoảng thời gian cực ngắn",
+        desc: "Từ khi Nhật đầu hàng đến trước khi quân Đồng minh kéo vào Đông Dương."
+      },
+      {
+        bigNum: "100%",
+        unit: "Sẵn sàng",
+        label: "Thực lực cách mạng",
+        desc: "Việt Minh và quần chúng sục sôi khí thế chờ lệnh Tổng khởi nghĩa."
       }
-    },
+    ],
     historicalQuote: {
       quote: "Lúc này thời cơ thuận lợi đã tới, dù có phải đốt cháy cả dãy Trường Sơn cũng phải giành cho được độc lập!",
       speaker: "Lời kêu gọi khẩn thiết của Bác Hồ tại Tân Trào (8/1945)"
@@ -412,32 +460,35 @@ export const slides = [
   {
     id: 13,
     slideNumber: "13",
+    layoutType: "cards-3col",
     badge: "Quyết Sách Chớp Thời Cơ",
     period: "13 – 16/08/1945",
     title: "Quyết Sách Chớp Thời Cơ - Hội Nghị Tân Trào",
-    subtitle: "Quân lệnh số 1 & Đại hội Quốc dân Tân Trào",
+    subtitle: "Ba quyết sách lịch sử phát động Tổng khởi nghĩa giành chính quyền",
     themeColor: "red",
-    content: {
-      leftPillar: {
-        title: "Quân Lệnh Số 1 & Hội Nghị Đảng",
+    cards: [
+      {
         icon: "Megaphone",
-        points: [
-          "Đêm 13/8/1945: Ủy ban Khởi nghĩa ra Quân lệnh số 1 phát động Tổng khởi nghĩa trong cả nước.",
-          "Từ 14 - 15/8/1945: Hội nghị toàn quốc của Đảng họp tại Tân Trào (Tuyên Quang).",
-          "Quyết định phát động Tổng khởi nghĩa toàn quốc trước khi quân Đồng minh tiến vào Đông Dương."
-        ]
+        time: "Đêm 13/08/1945",
+        title: "Quân Lệnh Số 1",
+        location: "Ủy ban Khởi nghĩa",
+        desc: "Phát động Tổng khởi nghĩa toàn quốc ngay khi biết tin Nhật sắp đầu hàng."
       },
-      rightPillar: {
-        title: "Đại Hội Quốc Dân Tân Trào (16-17/8)",
+      {
+        icon: "FileText",
+        time: "14 - 15/08/1945",
+        title: "Hội Nghị Toàn Quốc Của Đảng",
+        location: "Tân Trào (Tuyên Quang)",
+        desc: "Thông qua kế hoạch Tổng khởi nghĩa trước khi quân Đồng minh vào Đông Dương."
+      },
+      {
         icon: "Landmark",
-        points: [
-          "Được ví như 'Nghị viện cách mạng' đầu tiên của Việt Nam.",
-          "Tán thành quyết định Tổng khởi nghĩa của Đảng.",
-          "Thông qua 10 chính sách lớn của Việt Minh.",
-          "Bầu ra Ủy ban Dân tộc Giải phóng Việt Nam do Hồ Chí Minh làm Chủ tịch."
-        ]
+        time: "16 - 17/08/1945",
+        title: "Đại Hội Quốc Dân Tân Trào",
+        location: "Nghị viện Cách mạng",
+        desc: "Bầu Ủy ban Dân tộc Giải phóng do Hồ Chí Minh làm Chủ tịch, thông qua 10 chính sách lớn."
       }
-    },
+    ],
     historicalQuote: {
       quote: "Giờ tổng khởi nghĩa đã đến! Cơ hội có một không hai cho quân dân Việt Nam vùng dậy giành lấy quyền độc lập tự do!",
       speaker: "Quân lệnh số 1 (Đêm 13/8/1945)"
@@ -446,32 +497,18 @@ export const slides = [
   {
     id: 14,
     slideNumber: "14",
+    layoutType: "triumphant-hero",
     badge: "Tổng Khởi Nghĩa Thắng Lợi",
     period: "19/08 – 02/09/1945",
     title: "Diễn Biến Tổng Khởi Nghĩa & Ngày 2/9/1945",
-    subtitle: "Thắng lợi vang dội tại các trung tâm & Tuyên ngôn Độc lập",
+    subtitle: "Thắng lợi thần tốc trong 15 ngày & Khai sinh nước Việt Nam Dân chủ Cộng hòa",
     themeColor: "amber",
-    content: {
-      leftPillar: {
-        title: "Thắng Lợi Vang Dội Ba Miền",
-        icon: "Trophy",
-        points: [
-          "Ngày 19/8/1945: Khởi nghĩa thắng lợi rực rỡ tại Hà Nội (chiếm Phủ Khâm sai, Tòa Thị chính...).",
-          "Ngày 23/8/1945: Thắng lợi tại Kinh đô Huế, Vua Bảo Đại tuyên bố bãi bỏ ngai vàng.",
-          "Ngày 25/8/1945: Thắng lợi rực rỡ tại Sài Gòn và lan rộng khắp cả nước.",
-          "Chỉ trong vòng 15 ngày, Tổng khởi nghĩa đã hoàn toàn thắng lợi."
-        ]
-      },
-      rightPillar: {
-        title: "Ngày 2/9/1945 - Khai Sinh Nước Việt Nam Mới",
-        icon: "Sparkles",
-        points: [
-          "Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập lịch sử tại Quảng trường Ba Đình.",
-          "Trịnh trọng tuyên bố với toàn thế giới sự ra đời của nước Việt Nam Dân chủ Cộng hòa.",
-          "Mở ra kỷ nguyên độc lập, tự do cho dân tộc Việt Nam."
-        ]
-      }
-    },
+    victoryMilestones: [
+      { date: "19/08", city: "HÀ NỘI", detail: "Chiếm Phủ Khâm sai, thắng lợi rực rỡ mở màn" },
+      { date: "23/08", city: "HUẾ", detail: "Vua Bảo Đại thoái vị, bãi bỏ ngai vàng phong kiến" },
+      { date: "25/08", city: "SÀI GÒN", detail: "Quần chúng chiếm Tòa Đô đốc, giải phóng miền Nam" },
+      { date: "02/09", city: "BA ĐÌNH", detail: "Bác Hồ đọc Tuyên ngôn Độc lập khai sinh nước VNDCCH" }
+    ],
     historicalQuote: {
       quote: "Nước Việt Nam có quyền hưởng tự do và độc lập, và sự thật đã thành một nước tự do độc lập. Toàn thể dân tộc Việt Nam quyết đem tất cả tinh thần và lực lượng, tính mạng và của cải để giữ vững quyền tự do, độc lập ấy.",
       speaker: "Tuyên ngôn Độc lập (02/9/1945)"
@@ -480,29 +517,34 @@ export const slides = [
   {
     id: 15,
     slideNumber: "15",
+    layoutType: "matrix-4grid",
     badge: "Bài Học Chiến Lược",
     period: "1939 – 1945",
     title: "Các Quyết Định Chiến Lược Tạo Nên Thành Công",
-    subtitle: "Tổng kết 4 trụ cột chiến lược vĩ đại của Đảng",
+    subtitle: "Tổng kết 4 trụ cột chiến lược vĩ đại dẫn tới Thắng lợi Mùa Thu năm 1945",
     themeColor: "red",
-    content: {
-      leftPillar: {
-        title: "Trụ Cột 1 & 2: Chuyển Hướng & Chuẩn Bị",
-        icon: "Compass",
-        points: [
-          "1. Chuyển hướng chỉ đạo chiến lược đúng đắn: Đặt nhiệm vụ giải phóng dân tộc lên hàng tối cao ngay từ 1939-1941.",
-          "2. Chuẩn bị thực lực toàn diện từ sớm: Xây dựng cả lực lượng chính trị quần chúng (Việt Minh) lẫn lực lượng vũ trang (Giải phóng quân) và căn cứ địa vững chắc."
-        ]
+    matrixPillars: [
+      {
+        number: "01",
+        title: "Chuyển Hướng Chiến Lược Đúng Đắn",
+        desc: "Nhạy bén đặt nhiệm vụ giải phóng dân tộc lên hàng tối cao ngay từ 1939-1941."
       },
-      rightPillar: {
-        title: "Trụ Cột 3 & 4: Nghệ Thuật Khởi Nghĩa & Thời Cơ",
-        icon: "Zap",
-        points: [
-          "3. Nghệ thuật khởi nghĩa linh hoạt: Đi từ khởi nghĩa từng phần, chiến tranh du kích cục bộ tiến lên Tổng khởi nghĩa.",
-          "4. Dự báo thiên tài & Chớp đúng thời cơ vàng: Quyết đoán phát động Tổng khởi nghĩa đúng lúc kẻ thù hoang mang nhất trước khi quân Đồng minh vào."
-        ]
+      {
+        number: "02",
+        title: "Chuẩn Bị Thực Lực Toàn Diện Từ Sớm",
+        desc: "Xây dựng lực lượng chính trị (Việt Minh), lực lượng vũ trang và căn cứ địa vững chắc."
+      },
+      {
+        number: "03",
+        title: "Nghệ Thuật Khởi Nghĩa Linh Hoạt",
+        desc: "Khởi nghĩa từng phần, chiến tranh du kích cục bộ tiến lên Tổng khởi nghĩa."
+      },
+      {
+        number: "04",
+        title: "Dự Báo Thiên Tài & Chớp Thời Cơ Vàng",
+        desc: "Đón đúng thời cơ cực ngắn phát động Tổng khởi nghĩa thành công trước khi Đồng minh vào."
       }
-    },
+    ],
     historicalQuote: {
       quote: "Thắng lợi của Cách mạng Tháng Tám là sự kết tinh của 15 năm chuẩn bị công phu, kiên cường dưới sự lãnh đạo tài tình của Đảng.",
       speaker: "Văn kiện Tổng kết Cách mạng Việt Nam"
@@ -511,31 +553,35 @@ export const slides = [
   {
     id: 16,
     slideNumber: "16",
+    layoutType: "cards-3col",
     badge: "Tính Chất Cách Mạng",
     period: "1945",
     title: "Tính Chất Của Cách Mạng Tháng Tám",
-    subtitle: "Cách mạng giải phóng dân tộc điển hình & Dân chủ mới sâu sắc",
+    subtitle: "Ba đặc trưng bản chất sâu sắc của cuộc cách mạng vĩ đại",
     themeColor: "amber",
-    content: {
-      leftPillar: {
-        title: "Giải Phóng Dân Tộc Điển Hình",
+    cards: [
+      {
         icon: "Flag",
-        points: [
-          "Mang tính chất giải phóng dân tộc vô cùng đậm nét: Tập trung toàn bộ sức mạnh vào mục tiêu lật đổ ách thống trị phát xít - thực dân.",
-          "Thành lập chính quyền nhà nước của chung toàn thể nhân dân (Việt Nam Dân chủ Cộng hòa).",
-          "Đoàn kết rộng rãi chưa từng có mọi tầng lớp nhân dân dưới lá cờ Cứu quốc."
-        ]
+        time: "Đặc Trưng 1",
+        title: "Giải Phóng Dân Tộc Điển Hình",
+        location: "Đại đoàn kết",
+        desc: "Tập trung lật đổ ách thống trị phát xít - thực dân, thành lập nhà nước VNDCCH của toàn dân."
       },
-      rightPillar: {
-        title: "Tính Dân Chủ Mới & Nhân Văn Sâu Sắc",
+      {
         icon: "Heart",
-        points: [
-          "Mang tính dân chủ mới: Thực hiện từng bước quyền làm chủ cho nông dân, người lao động.",
-          "Tính nhân văn sâu sắc: Giành chính quyền nhanh chóng, ít đổ máu, thể hiện truyền thống nhân đạo cao đẹp.",
-          "Xóa bỏ hoàn toàn chế độ phong kiến lỗi thời tồn tại nghìn năm."
-        ]
+        time: "Đặc Trưng 2",
+        title: "Tính Dân Chủ Mới Sâu Sắc",
+        location: "Vì nhân dân",
+        desc: "Từng bước đem lại quyền làm chủ cho nông dân và nhân dân lao động, xóa bỏ phong kiến nghìn năm."
+      },
+      {
+        icon: "Sparkles",
+        time: "Đặc Trưng 3",
+        title: "Tính Nhân Văn Cao Cả",
+        location: "Ít đổ máu",
+        desc: "Khởi nghĩa thần tốc, giành chính quyền nhanh gọn, thể hiện truyền thống nhân đạo cao đẹp."
       }
-    },
+    ],
     historicalQuote: {
       quote: "Cách mạng Tháng Tám là một cuộc cách mạng giải phóng dân tộc điển hình, mở đầu cho thời kỳ sụp đổ của chủ nghĩa thực dân cũ.",
       speaker: "Đánh giá của các nhà nghiên cứu lịch sử quốc tế"
@@ -544,29 +590,30 @@ export const slides = [
   {
     id: 17,
     slideNumber: "17",
+    layoutType: "impact-dual",
     badge: "Ý Nghĩa Lịch Sử",
     period: "1945 – Nay",
     title: "Ý Nghĩa Lịch Sử Vĩ Đại Của Cách Mạng Tháng Tám",
-    subtitle: "Cột mốc chói lọi đối với Dân tộc Việt Nam & Phong trào Thế giới",
+    subtitle: "Cột mốc chói lọi mở ra kỷ nguyên mới cho Dân tộc & Phong trào Thế giới",
     themeColor: "red",
-    content: {
-      leftPillar: {
-        title: "Đối Với Dân Tộc Việt Nam",
+    impactColumns: {
+      national: {
+        title: "ĐỐI VỚI DÂN TỘC VIỆT NAM",
         icon: "Award",
         points: [
-          "Đập tan ách nô lệ hơn 80 năm của thực dân Pháp và phát xít Nhật, chấm dứt chế độ phong kiến.",
+          "Đập tan ách nô lệ hơn 80 năm của Pháp - Nhật, xóa bỏ hoàn toàn chế độ phong kiến.",
           "Lập nên nước Việt Nam Dân chủ Cộng hòa - Nhà nước công nông đầu tiên ở Đông Nam Á.",
-          "Đưa dân tộc Việt Nam bước vào kỷ nguyên mới: Kỷ nguyên Độc lập, Tự do và Chủ nghĩa xã hội.",
-          "Đưa Đảng ta từ một Đảng hoạt động bí mật trở thành Đảng cầm quyền."
+          "Mở ra kỷ nguyên mới: Độc lập, Tự do và Chủ nghĩa xã hội.",
+          "Đưa Đảng ta trở thành Đảng cầm quyền lãnh đạo toàn dân."
         ]
       },
-      rightPillar: {
-        title: "Đối Với Thế Giới",
+      international: {
+        title: "ĐỐI VỚI THẾ GIỚI",
         icon: "Globe",
         points: [
-          "Cú đòn tử thương vào chủ nghĩa thực dân cũ, mở đầu cho sự sụp đổ hệ thống thuộc địa thế giới.",
+          "Cú đòn tử thương vào chủ nghĩa thực dân cũ, mở đầu sự sụp đổ hệ thống thuộc địa.",
           "Cổ vũ mạnh mẽ các dân tộc bị áp bức ở châu Á, châu Phi và Mỹ La-tinh đứng lên tự giải phóng.",
-          "Làm phong phú thêm kho tàng lý luận Mác - Lênin về cách mạng giải phóng dân tộc ở các nước thuộc địa."
+          "Bổ sung và làm phong phú kho tàng lý luận Mác - Lênin về cách mạng giải phóng dân tộc."
         ]
       }
     },
