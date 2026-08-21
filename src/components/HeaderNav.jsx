@@ -11,9 +11,12 @@ import {
   Minimize, 
   Award,
   Printer,
+  Presentation,
   ChevronLeft,
   ChevronRight
 } from 'lucide-react';
+import { exportToPptx } from '../utils/exportToPptx';
+
 
 export default function HeaderNav({
   currentSlideIndex,
@@ -135,6 +138,15 @@ export default function HeaderNav({
         >
           <Printer className="w-4 h-4" />
         </button>
+
+        <button
+          onClick={exportToPptx}
+          className="p-2 rounded-lg bg-white border border-stone-300 text-stone-600 hover:text-red-800 hover:bg-amber-50 transition"
+          title="Xuất bài thuyết trình sang PowerPoint (.pptx)"
+        >
+          <Presentation className="w-4 h-4" />
+        </button>
+
 
         <button
           onClick={toggleFullscreen}
